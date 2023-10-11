@@ -11,82 +11,116 @@
 \usepackage{cite}
 
 \begin{document}
-\pagenumbering{gobble} % suppress displaying page number
+	\pagenumbering{gobble} % suppress displaying page number
+	
+	\name{王军杰}
+	
+	\basicInfo{
+		\email{guxinghaoyun@gmail.com} \textperiodcentered\
+		\phone{(+86) 157-3403-7941} \textperiodcentered\
+		\linkedin[\underline{anyun blog}]{https://guxinghaoyun.github.io/}}
+	
+	\section{\faGraduationCap\  教育背景}
+	\datedsubsection{\textbf{西安电子科技大学}, 西安市, 陕西省}{2019 -- 2022}
+	\textit{硕士研究生} \quad 计算机科学与技术
+	\datedsubsection{\textbf{沈阳航空航天大学}, 沈阳市, 辽宁省}{2014 -- 2018}
+	\textit{学士\qquad\quad} \quad 电子信息工程
+	
+	\section{\faUsers\ 竞赛经历}
+	\datedsubsection{\textbf{2020年全国人工智能大赛“行人重识别”赛道} -- 深圳}{2020年8月 -- 2020年12月}
+	\role{{\large 项目任务}:} {在给定的跨摄像头、非自然光数据集中找到相同行人图片序列。}
+	\role{{\large 项目难点}:} {给定经过特殊处理数据集，且人眼无法分辨的行人图像。该比赛分为三轮，每一轮给定数据集的处理方式都不相同。}
+	\role{{\large 项目方案}:} {
+		\begin{itemize}[parsep=0.7ex]
+			\item 通过提出的个性化数据增强方式对数据集分类处理，该方案在复赛中使得提升20\%。
+			\item 复赛中提出使用类激活热力图的方式进行后处理操作，该方案在复赛中成绩提升3\%。
+			\item 使用局部特征和全局特征融合的方式，在权重文件只有9个情况下，实现了36个模型 的加权融合，最终该方案在决赛成绩中提升15\%。
+		\end{itemize}}
+	\role {\large{成 \qquad 绩}:}{获得全国人工智能大赛”行人重识别“赛道优胜奖。}
+	
+	\section{\faUsers\ 项目经历}
+	\datedsubsection{\textbf{中核核仪器股份有限公司} \quad \quad \textbf{西安}}{2022年7月 -- 至今}
+	\role{技术研发}{海陆空天一体化防御研究}
+	海域、天域防护研究项目子课题负责人
+	\begin{itemize}[parsep=0.7ex]
+		\item  本项目拟对海域、天域安防监测系统进行研究，突破水下威胁小目标探测的关键技术，为港口 、岛礁、核电站、海上石油平台等重点区域和关键设施防护提供核心设备及先进监控系统平台。
+		\item  海域安防系统采用多方协同、横纵联动机制，能够对来自防御区域内部或外部的各类威胁进行探测预警、监视识别以及快速的响应拒止。对于拒止无效目标，继承空域系统，进行相应反制策略。
+		\item 海域安防系统主要由综合指挥控制系统、网络通信与数据传输系统、监视识别系统、拒止系统、水域监测预警系统、空域继承反制系统等几部分组成。
+	\end{itemize}
+	
+	\datedsubsection{\textbf{中交第一公路勘察设计研究院有限公司} \quad \quad \textbf{西安}}{2021年5月 -- 2021年6月}
+	\role{技术研发}{龙门架车牌识别研究}
+	高速、快速干道龙门架车牌识别方案设计者
+	\begin{onehalfspacing}
+		\begin{itemize}[parsep=0.5ex]
+			\item 为检测通行公路中过往车辆的详细信息，需要成套的车辆信息检测设备，符合相应的实际设计要求。
+			\item 车牌识别算法实验平台的构建，算法调参优化，系统方案的模拟。
+			\item 负责龙门架车牌识别的方案设计，算法实验平台构建，算法调参优化，系统方案的平台模拟。
+		\end{itemize}
+	\end{onehalfspacing}
+	
+	\datedsubsection{\textbf{人脸表情实时监测系统} \quad \quad \textbf{西安}}{2020年7月 -- 2020年11月}
+	\role{技术研发}{在校期间项目}
+	实时检测自然场景下的人脸表情，并进行有效的反馈。
+	\begin{onehalfspacing}
+		\begin{itemize}[parsep=0.5ex]
+			\item 采用板载AGX边缘结算设备，实现深度学习算法的移植。
+			\item 采用Gabor卷积神经网络做为特征提取，使用libfaceDetection作为图像人脸检测网络。
+			\item 使用OpenCV做为图像获取及处理工具包，使用PyQt5进行GUI编写。
+			\item 搭建AGX的板载系统和深度学习代码的运行环境，解决代码迁移中出现的算子不匹配问题，调试系统，整合各模块代码，制作GUI交互界面，撰写报告。
+		\end{itemize}
+	\end{onehalfspacing}
+	
+	\datedsubsection{\textbf{人脸识别系统} \quad\quad \textbf{西安}}{2019年10月 -- 2020年5月}
+	\role{技术研发}{在校期间项目}
+	设计并实现人脸的检测，识别出身份信息。
+	\begin{onehalfspacing}
+		\begin{itemize}[parsep=0.5ex]
+			\item 采用深度学习神经网络框架PyTorch提取特征，采用OpenCV处理图像，采用PyQt编写GUI界面。
+			\item 采用卷积神经网络的FaceNet作为人脸特征值的提取模型。
+			\item 采用MTCNN做为图像中人脸的截取，使用OpenCV驱动摄像头获取外部环境图像，实现人脸的检测，人脸的识别匹配过程。
+			\item 负责算法模型的预训练权重文件，优化模型，整合各模块，编写GUI交互界面，撰写使用介绍文档。
+		\end{itemize}
+	\end{onehalfspacing}
+	
+	\datedsubsection{\textbf{ZigBee通信应用部署} \quad\quad \textbf{沈阳}}{2017年12月 -- 2018年5月}
+	\role{技术研发}{在校期间项目}
+	模拟酒店房间的通信环境，设计可行性的方案，验证通信方案的有效性，及信息传递的准确定。
+	\begin{onehalfspacing}
+		\begin{itemize}[parsep=0.7ex]
+			\item 采用树形结构的设计方案，以ZigBee-CC2530作为通信节点的载体，在网络层进行算法实现。
+			\item 组成内部局域网，通过I/O口进行外接RFID，舵机控制，液晶显示，传感器检测。
+			\item 负责通信方案的设计，协调调整整体的方案，共同设计编码信息传输格式，编写ZigBee节点应用层的代码编写,调试系统，撰写报告。
+		\end{itemize}
+	\end{onehalfspacing}
+	
+	\section{\faHeartO\ 获奖情况}
+	\datedline{2020年第二届全国人工智能大赛, \textit{优胜奖}}{2020年8月 -- 2020年12月}
+	\datedline{研究生奖学金一等}{2019年}
+	\datedline{Kaggle大赛铜牌}{2021年}
+	
+	\section{\faInfo\ 学术领域论文、国际大赛及国内大赛奖项}
+%	 increase linespacing [parsep=0.5ex]
+	\faHandORight\ \textbf{获得学术领域论文}：
+	\begin{itemize}[parsep=0.75ex]
+		\item 王军杰, 蒋平, 王泉, 刘音. 一种孤立中心损失方法及其在人脸表情识别中的应用[J]. 西安交通大学学报, 2022(04):1-8. (EI期刊)
+		\item Li Zeyu, Huang Zhao, Wang Quan, Wang Junjie, Nan Luo. Implementation of Aging Mechanism Analysis and Prediction for XILINX 7-Series FPGAs with a 28-nm Process[J]. S ensors, 2022, 22(12): 4439. （SCI三区）
+		\item Li Zeyu, Huang Zhao, Wang Quan, Wang Junjie. AMROFloor: An Efficient Aging Mitigation and Resource Optimization Floorplanner for Virtual Coarse-Grained Runtime Reconfigurable FPGAs[J]. Electronics, 2022, 11(2): 273. (SCI四区)
+		\item Li Zeyu, Wang Junjie, Huang Zhao, Nan Luo, Wang Quan. Towards Trust Hardware Deployment of Edge Computing: Mitigation of Hardware Trojans Based on Evolvable Hardware[J]. Applied Sciences, 2022, 12(13): 6601. （SCI三区）
+		\item Li, Zeyu, Junjie Wang, Zhao Huang, Quan Wang. 2022. EA-based Mitigation of Hardware Trojan Attacks in NoC of Coarse-Grained Reconfigurable Arrays[C], 2022 International Conference on Networking and Network Applications, no. 110. (EI会议)
+	\end{itemize}
+	\faHandORight\ \textbf{国际大赛及国内大赛奖项如下}：	
+	\begin{itemize}[parsep=0.75ex]
+		\item 刘音, 王军杰, 程枫, 李碧. 2020 年全国人工智能大赛优胜奖, 2020 年12 月.
+		\item 王军杰. Kaggle- Cassava Leaf Disease Classification. Kaggle 铜牌, 2021 年03月.
+		\item 王军杰. Kaggle- Riiid Answer Correctness Prediction. Kaggle 铜牌, 2021 年01月.
+	\end{itemize}
+	
+	
 
-\name{你的大名}
-
-\basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
-
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
-\end{onehalfspacing}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
-
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
-
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
-
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
+	
+	%% Reference
+	%\newpage
+	%\bibliographystyle{IEEETran}
+	%\bibliography{mycite}
 \end{document}
